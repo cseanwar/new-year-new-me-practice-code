@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.font-open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.banner {
+    position: relative;
+    height: 90vh;
+    background-image: url('../images/banner/banner3.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 120px;
+    border-bottom: 3px solid rgb(228, 225, 225);
+}
+
+.banner .banner-content {
+  max-width: 500px;
+  text-align: right;
+}
+
+.banner-content h1 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.banner-content p {
+    line-height: 1.6;
+    font-weight: 100;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.banner-content p:hover, .banner-content h1:hover {
+    text-decoration-line: underline;
+    text-decoration-color: rgb(198, 11, 255);
+    text-decoration-thickness: 2px;
+    text-decoration-style: solid;
+}
+
+.btn {
+    width: 160px;
+    height: 64px;
+    background-color: #FFFFFF;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #005FAC;
+    cursor: pointer;
+}
+
+.banner-content .btn:hover {
+    border: 2px solid rgb(198, 11, 255);
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgb(210, 16, 254);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.banner:hover::after {
+  opacity: 1;
+}
+
+.banner:hover:not(:has(.banner-content:hover)) {
+  outline: none;
+}
+
+.failure-content {
+    width: 1072px;
+    height: 723px;
+    margin: 131px 322px 230px 206px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.person {
+    width: 569px;
+    height: 723px;
+}
+
+.check-list {
+    list-style: none;
+    line-height: 2.2;
+    font-size: 12px;
+    color: #555;
+}
+
+.info-box {
+    width: 416px;
+    height: 400px;
+    margin-top: 370px;
+    margin-bottom: 214px;
+}
+
+.info-box h3 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.info-box p {
+    line-height: 1.8;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.color-green {
+    color: #16D887;
+    padding-right: 10px;
+}
+
+.plan-section {
+    margin: 130px 230px 130px 230px;
+    width: 1141px;
+    height: 300px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    gap: 86px;
+    flex-wrap: nowrap;
+}
+
+.card {
+    width: 300px;
+}
+
+.card img {
+    width: 100%;
+    margin-top: 56px;
+    margin-bottom: 24px;
+}
+
+.card-container h3 {
+    margin-bottom: 16px;
+}
+
+.card-container p {
+    margin-bottom: 130px;
+}
+
+.always {
+    width: 1141px;
+    height: 300px;
+    margin: 230px 230px 130px 230px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url('../images/watch.png');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.overflow {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+    rgba(0, 95, 172, 1) 0%,
+    rgba(0, 95, 172, 0.5) 40%,
+    rgba(0, 95, 172, 0) 100%
+    );
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.always-content {
+    margin: 59px 617px 59px 64px;
+    width: 459px;
+    height: 182px;
+}
+
+.always-content h1 {
+    color: white;
+    margin-bottom: 24px;
+    font-size: 2.2rem;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+.btn-call {
+    width: 160px;
+    height: 64px;
+    padding: 21px 36px;
+    background-color: white;
+    color: #F15B22;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.footer-container {
+    background-color: #121212;
+    color: #F8F8F8;
+    padding: 80px 10%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info {
+    flex: 2;
+}
+
+.footer-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.footer-info p {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    max-width: 500px;
+}
+
+.contact-details p {
+    margin-bottom: 16px;
+    margin: 5px 0;
+    color: #cccccc;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 32px;
+}
+
+.icon {
+  /* background: white; */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+}
+
+.footer-subscribe {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-subscribe h3 {
+    font-size: 1.5rem;
+    margin-bottom: 31px;
+}
+
+.footer-subscribe input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.footer-subscribe button {
+  background-color: #005FAC;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.footer-subscribe button:hover {
+  background-color: #f0f0f0;
+}
